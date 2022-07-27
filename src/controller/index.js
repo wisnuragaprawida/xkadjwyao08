@@ -1,4 +1,4 @@
-const ProvinceController= require('./province.controller');
+const ProvinceController = require('./province.controller');
 const CityController = require('./city.controller');
 const DistrictController = require('./district.controller')
 const PeopleController = require('./people.controller')

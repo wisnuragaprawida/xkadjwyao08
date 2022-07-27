@@ -8,12 +8,7 @@ class Validate {
         return true;
     }
 
-    // require(book) {
-    //     if (!book.code || !book.title || !book.publisher || !book.publicationYear || !book.author) {
-    //         return false;
-    //     }
-    //     return true;
-    // }
+  
     isOfficeHours(time) {
         if (time < 8  && time > 14) {
             return false;
@@ -26,11 +21,22 @@ class Validate {
         }
         return true;
     }
-    isNikExist(nik) {
-        if (nik == "") {
+    isNikExist(nik,datas) {
+        if (datas.length > 0) {
+        for (let data of datas){
+            if (data.nik == nik){                                       
+                    return true;
+            }
+            else{
+                return false;
+            }
+            
+        }
+        }else{
             return false;
         }
-        return true;
+        
+
     }
      require(data) {
             if (!data.id || !data.name) {

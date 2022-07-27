@@ -51,7 +51,7 @@ class BaseService extends Validate {
             setTimeout(() => {
                 
                 for (let i = 0; i < datas.length; i++) {
-                    if (datas[i].id === id) {
+                    if (datas[i].id.toLowerCase() === id.toLowerCase()) {
                         const result = {
                             data: datas[i],
                             response: this.response.successMessage(datas[i])

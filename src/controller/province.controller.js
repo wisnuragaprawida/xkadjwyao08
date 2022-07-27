@@ -25,6 +25,8 @@ function ProvinceController() {
     provinceService.deleteProvinceById('02');
     provinceService.updateProvinceById(province5);
     provinceService.getProvince();
+
+    return provinceService;
 }
 
 module.exports = ProvinceController;

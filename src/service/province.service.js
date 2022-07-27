@@ -9,6 +9,8 @@ class ProvinceService extends BaseService {
 
     }
 
+   
+
     async addProvince(data){
 
         try {

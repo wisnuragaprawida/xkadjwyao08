@@ -1,7 +1,6 @@
 const Validate = require('./validate');
 const {Response, commonResponse} = require('./response');
 
-
 const utils = {}
 
 utils.Validate = Validate;
